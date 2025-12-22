@@ -1,0 +1,11 @@
+@use "../BASE/variables" as *;
+@use "../BASE/mixins" as *;
+
+html body{
+    margin: 0;
+}
+
+body{
+    font-family: $fuente;
+    letter-spacing: -0.02em;
+}

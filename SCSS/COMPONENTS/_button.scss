@@ -1,0 +1,30 @@
+@use "../BASE/variables" as *;
+
+button{
+    position: fixed;
+    padding: 10px 20px;
+    bottom: 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    z-index: 1000;
+    background-color: $bgBtnContactCV;
+    color: $colorLetraBtnContacCV;
+}
+
+#contactar{
+    right: 20px;
+}
+
+#cv{
+    left: 20px;
+}
+
+#btn-flecha-arriba{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        width: 25px;
+        height: 25px;
+    }
+}

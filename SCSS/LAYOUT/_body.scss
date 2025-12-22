@@ -1,0 +1,52 @@
+@use "../BASE/variables" as *;
+
+section{
+    width: 100vw;
+    height: 100vh;
+}
+
+#formacion{
+    text-align: center;
+}
+
+#sobre-mi{
+    padding: 0;
+    background-color: #ffffff;
+    justify-content: center;
+
+    .sobremi-content{
+        max-width: 700px;
+        margin: 0 auto;
+        text-align: center;
+
+        .foto-perfil-container{
+            margin-bottom: 2rem;
+
+            img{
+                width: 140px;
+                height: 140px;
+                border-radius: 50%;
+                object-fit: cover;
+                border: 4px solid black;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            }
+        }
+
+        h2{
+            font-weight: 800;
+            font-size: 2rem;
+            color: #1e293b;
+            margin-bottom: 1.5 rem;
+            letter-spacing: -0.03em;
+        }
+
+        p{
+            font-size: 1.1rem;
+            font-weight: 400;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #475569;
+            margin: 0 auto;
+        }
+    }
+}

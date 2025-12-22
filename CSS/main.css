@@ -1,0 +1,185 @@
+html body {
+  margin: 0;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  letter-spacing: -0.02em;
+}
+
+header {
+  background-color: black;
+  background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  margin: 0;
+  height: 100vh;
+  position: relative;
+}
+header h3 {
+  text-align: center;
+  font-size: 250%;
+}
+header h5 {
+  margin-top: 0;
+  color: rgb(131, 228, 196);
+}
+header p {
+  text-align: center;
+}
+header nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  padding: 30px 0;
+}
+header nav a {
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  color: rgb(223, 218, 218);
+}
+header nav a:hover {
+  transform: translateY(-8px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: aquamarine;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+}
+
+#formacion {
+  text-align: center;
+}
+
+#sobre-mi {
+  padding: 0;
+  background-color: #ffffff;
+  justify-content: center;
+}
+#sobre-mi .sobremi-content {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+#sobre-mi .sobremi-content .foto-perfil-container {
+  margin-bottom: 2rem;
+}
+#sobre-mi .sobremi-content .foto-perfil-container img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid black;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+#sobre-mi .sobremi-content h2 {
+  font-weight: 800;
+  font-size: 2rem;
+  color: #1e293b;
+  margin-bottom: 1.5 rem;
+  letter-spacing: -0.03em;
+}
+#sobre-mi .sobremi-content p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #475569;
+  margin: 0 auto;
+}
+
+button {
+  position: fixed;
+  padding: 10px 20px;
+  bottom: 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  z-index: 1000;
+  background-color: #333;
+  color: white;
+}
+
+#contactar {
+  right: 20px;
+}
+
+#cv {
+  left: 20px;
+}
+
+#btn-flecha-arriba {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#btn-flecha-arriba img {
+  width: 25px;
+  height: 25px;
+}
+
+.cards-container {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+  justify-content: center;
+}
+.cards-container .card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e2e8f0;
+}
+.cards-container .card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+}
+.cards-container .card .card-content {
+  padding: 1.5rem;
+}
+.cards-container .card .card-content h4 {
+  margin: 15px;
+}
+.cards-container .card .card-content p {
+  margin: 15px;
+  color: #777474;
+}
+.cards-container .card .card-content h6 {
+  margin: 0;
+}
+.cards-container .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+.cards-container img {
+  width: 70%;
+  border-radius: 10px 10px 0 0;
+  object-fit: contain;
+}
+
+.card-title {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin: 40px auto;
+}
+.card-title h4 {
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */
