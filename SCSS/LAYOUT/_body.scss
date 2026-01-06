@@ -1,6 +1,8 @@
 @use "../BASE/variables" as *;
+@use "../BASE/mixins" as *;
 
 section{
+    margin: auto auto;
     width: 100vw;
     height: 100vh;
 }
@@ -9,9 +11,13 @@ section{
     text-align: center;
 }
 
+#proyectos{
+    text-align: center;
+}
+
 #sobre-mi{
     padding: 0;
-    background-color: #ffffff;
+    background-color: $colorFondoSobreMi;
     justify-content: center;
 
     .sobremi-content{
@@ -21,22 +27,28 @@ section{
 
         .foto-perfil-container{
             margin-bottom: 2rem;
+            width: 140px;
+            height: 140px;
+            margin-left: auto;
+            margin-right: auto;
+            overflow: hidden;
+            border-radius: 50%;
+            border: 4px solid black;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 
             img{
-                width: 140px;
-                height: 140px;
-                border-radius: 50%;
+                width: 100%;
+                height: 100%;
                 object-fit: cover;
-                border: 4px solid black;
-                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+                display: block;
             }
         }
 
         h2{
             font-weight: 800;
             font-size: 2rem;
-            color: #1e293b;
-            margin-bottom: 1.5 rem;
+            color: $colorH2SobreMi;
+            margin-bottom: 1.5rem;
             letter-spacing: -0.03em;
         }
 
@@ -45,8 +57,15 @@ section{
             font-weight: 400;
             font-size: 1.1rem;
             line-height: 1.7;
-            color: #475569;
+            color: $colorPsobreMi;
             margin: 0 auto;
         }
     }
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8px;
 }
